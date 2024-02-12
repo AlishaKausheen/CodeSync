@@ -249,7 +249,7 @@ body{
   line-height: 20px;
   letter-spacing: 0.2px;
   min-height: 100vh;
-  min-height: 100dvh;/* for mobile browser*/
+  min-height: 100dvh; /* for mobile browser*/
   display: flex;
   flex-direction: column;
   padding-block: var(--header-height) 16px;
