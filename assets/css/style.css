@@ -279,8 +279,60 @@ body{
   max-width: 1280px;
   width: 100%;
   margin-inline: auto;
-  
 }
+
+.material-symbols-rounded{
+  width:1em;
+  height: 1em;
+  font-variation-settings: 
+  'FILL' 1,
+   'wgt' 400
+   'GRAD' 0
+   'opsz' 24;
+}
+
+.img-holder{
+  aspect-ratio: var(--width)/var(--height);
+  background-color: var(--alpha-50);
+  overflow: hidden;
+}
+
+.avatar-circle{
+  border-radius: var(--radius-circle);
+}
+
+.avatar-rounded{
+  border-radius: var(--radius-24);
+}
+
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-1{
+  font-size: var(--title-1);
+  font-weight: var(--weight-medium);
+  line-height: 72px;
+}
+
+.title-2{
+  font-size: var(--title-2);
+  line-height: 28px;
+  font-weight: var(--weight-semiBold);
+}
+
+.title-3{
+  font-size: var(--title-3);
+  line-height: 24px;
+  font-weight: var(--weight-regular);
+}
+
+.body{
+  font-size: var(--body);
+}
+
 /* Icon button */
 
 
