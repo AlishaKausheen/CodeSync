@@ -253,6 +253,7 @@ body{
   display: flex;
   flex-direction: column;
   padding-block: var(--header-height) 16px;
+  
 }
 
 ::-webkit-scrollbar{
