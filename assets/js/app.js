@@ -1,5 +1,5 @@
-import { fetchData } from "./api.js";
-import { numberToKilo } from "./module.js";
+//import { fetchData } from "./api.js";
+//import { numberToKilo } from "./module.js";
 
 /**
  
@@ -26,3 +26,14 @@ window.addEventListener("scroll", function () {
 })
 
 // Search toggle
+const /* {nodeElement} */ $searchToggler = document.querySelector("[data-search-toggler]");
+const /* {nodeElement} */ $searchField = document.querySelector("[data-search-field]");
+ 
+let isExpanded = false;
+
+$searchToggler.addEventListener("click", function (e) {
+    $header.classList.toggle("search-active");
+    isExpanded = isExpanded ? false : true;
+    this.setAttribute("aria-expanded", isExpanded);
+    $searchField.focus();
+})
