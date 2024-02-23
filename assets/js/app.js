@@ -21,6 +21,8 @@ const addEventOnElements = function ($elements, eventType, callback) {
 const $header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
-    $header.classList[this.window.scrollY > 50 ? "add" : "remove"]("active");
+    $header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
     
 })
+
+// Search toggle
