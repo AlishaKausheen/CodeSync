@@ -422,7 +422,25 @@ display: none;
   background-color: var(--primary-hover);
   
 }
+
+
 /* Button */
+.btn{
+  padding-inline: 24px;
+  height: 24px;
+  font-size: var(--label-1);
+  font-weight: var(--weight-medium);
+  border-radius: var(--radius-8);
+  border: 1px solid transparent;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  line-height: 40px;
+  transition: var(--transition-short);
+   
+}
 
 
 /* Badge */
