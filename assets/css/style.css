@@ -455,9 +455,14 @@ display: none;
 .btn-secondary{
   background-color: var(--surface-1);
   color: var(--primary);
-  
+  border-color: var(--surface-1-outline);
 }
 
+.btn-secondary:where(:hover, :focus-visible):not(:active){
+  background-color: var(--surface-1-hover);
+  border-color: var(--surface-1-outline-hover);
+
+}
 /* Badge */
 
 
@@ -575,11 +580,36 @@ display: none;
 /*-----------------------------------*\
   #PROFILE
 \*-----------------------------------*/
+.main{
+  flex-grow: 1;
+  scroll-margin-top: var(--header-height);
+}
 
+.profile{
+  margin-block-end: 24px;
+}
 
+.profile :where(.avatar-circle, .avatar-rounded){
+  width: 160px;
+}
 
+.profile .title-2{
+  margin-block-end: 16px 4px;
+}
 
+.username{
+  line-height: 20px;
+  margin-block-end: 12px;
+}
 
+.profile .bio{
+  margin-block: 12px;
+  max-width: 80ch;
+}
+
+.profile .btn-secondary{
+  max-width: 100%;
+}
 /*-----------------------------------*\
   #TAB
 \*-----------------------------------*/
