@@ -482,7 +482,24 @@ display: none;
 
 
 /* Skeleton */
+.avatar-skeleton{
+width: 160px;
+height: 160px;
+border-radius: var(--radius-circle);
+background-color: var(--alpha-10);
+}
 
+.title-skeleton,
+.text-skeleton{
+  border-radius: var(--radius-pill);
+}
+
+.title-skeleton{
+  max-width: 180px;
+  width: 100%;
+  height: 24px;
+  background-color: var(--alpha-10);
+}
 
 
 
@@ -643,6 +660,10 @@ display: none;
 .profile-stats body{
   color: var(--on-background);
   font-weight: var(--weight-medium);
+}
+
+.profile .footer{
+  display: none;
 }
 /*-----------------------------------*\
   #TAB
